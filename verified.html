@@ -6,22 +6,16 @@
     
 </head>
 <body>
-    <!-- <h1>Click <a href="https://github.com/login/oauth/authorize">here</a> to login using GitHub</h1> -->
-
-
-    <!-- <p id="demo"></p>
-
     <script>
-        document.getElementById("demo").innerHTML = "Hello JavaScript!";
-
-    </script> -->
+        var req = new XMLHttpRequest();
+        req.open('GET', document.location, false);
+        req.send(null);
+        var headers = req.getAllResponseHeaders().toLowerCase();
+        // alert(headers);
+        console.log(req);
+    </script>
     
-    <form action="https://github.com/login/oauth/authorize" method="get">
-        <!-- <label for="fname">Client ID:</label><br> -->
-        <input type="text" id="client_id" name="client_id" value="0bfe4f89514c54260b14" hidden><br>
-
-        <input type="submit" value="Submit">
-      </form> 
+    <p>Session ID: <p id="session_id"></p></p>
 
 </body>
 </html>
