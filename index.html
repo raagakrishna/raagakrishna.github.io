@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Please login</title>
+    
 </head>
 <body>
-    <h1>Click <a href="">here</a> to login using GitHub</h1>
+    <!-- <h1>Click <a href="https://github.com/login/oauth/authorize">here</a> to login using GitHub</h1> -->
+
+
+    <!-- <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+    </script> -->
+    
+    <form action="https://github.com/login/oauth/authorize" method="get">
+        <!-- <label for="fname">Client ID:</label><br> -->
+        <input type="text" id="client_id" name="client_id" value="0bfe4f89514c54260b14" hidden><br>
+
+        <input type="submit" value="Submit">
+      </form> 
+
 </body>
 </html>
